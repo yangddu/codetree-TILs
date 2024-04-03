@@ -10,6 +10,6 @@ a %= b;
 for (let i = 0; i < 20; i ++) {
     a *= 10;
     result += parseInt(a / b);
-    a %= 10;
+    a %= b;
 }
 console.log(result);
