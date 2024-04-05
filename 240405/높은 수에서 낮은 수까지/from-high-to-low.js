@@ -9,10 +9,9 @@ if (a > b) {
     for (let i = a; i >= b; i--) {
         result += i + ' ';
     }
-    console.log(result);
 } else {
     for (let i = b; i >= a; i --) {
         result += i + ' ';
     }
-    console.log(result);
 }
+console.log(result);
