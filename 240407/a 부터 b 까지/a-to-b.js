@@ -5,6 +5,7 @@ let b = Number(input[1]);
 let result = a + ' ';
 
 for (let i = a; i < b;) {
+    console.log(i + ' ');
     if (i % 2 === 0) {
         i += 3;
         result += i + ' ';
@@ -13,4 +14,4 @@ for (let i = a; i < b;) {
         result += i + ' ';
     }
 }
-console.log(result);
+// console.log(result);
