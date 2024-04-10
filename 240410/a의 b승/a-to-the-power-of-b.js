@@ -2,10 +2,10 @@ const fs = require("fs");
 let input = fs.readFileSync(0).toString().trim().split(" ");
 let a = Number(input[0]);
 let b = Number(input[1]);
-let sum = a;
+let sum = 1;
 
 
 for (let i = 1; i <= b; i ++) {
-    sum += i * a;
+    sum *= a;
 }
 console.log(sum)
