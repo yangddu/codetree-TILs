@@ -6,9 +6,9 @@ let cnt = 1;
 for (let i = 1; i <= n; i++) {
     let a = parseInt(n / i);
     n = a;
-    cnt ++;
     if (n <= 1) {
         break;
     }
+  cnt++;
 }
 console.log(cnt);
