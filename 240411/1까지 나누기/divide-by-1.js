@@ -7,8 +7,8 @@ for (let i = 1; i <= n; i++) {
     n = parseInt(n / i);
     cnt++;
     if (n <= i) {
-        cnt++;
+        // cnt++;
         break;
     }
 }
-console.log(cnt);
+console.log(cnt + 1);
