@@ -8,7 +8,7 @@ for (let i = 1; i <= n; i++) {
     cnt++;
     if (n <= i) {
         cnt++;
-        console.log(cnt);
         break;
     }
 }
+console.log(cnt);
