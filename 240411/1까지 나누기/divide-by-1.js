@@ -1,14 +1,14 @@
 const fs = require("fs");
 let input = fs.readFileSync(0).toString().trim();
 let n = Number(input);
-let cnt = 0;
+let cnt = 1;
 
 for (let i = 1; i <= n; i++) {
-    n = parseInt(n / i);
-    if (n < i + 1) {
-      cnt ++;
-      break;
-    }
+    let a = parseInt(n / i);
+    n = a;
     cnt ++;
+    if (n <= 1) {
+        break;
+    }
 }
 console.log(cnt);
