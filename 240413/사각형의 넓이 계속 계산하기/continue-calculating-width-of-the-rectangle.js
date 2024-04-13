@@ -1,7 +1,16 @@
 const fs = require("fs");
 let input = fs.readFileSync(0).toString().trim().split("\n");
+let index = 0;
 
-for (let i = 0; i < input.length; i++) {
-    let arr = input[i].toString().trim().split(" ");
-    console.log(arr[0] * arr[1]);
+while (true) {
+    let arr = input[index].split(" ");
+    let x = Number(arr[0]);
+    let y = Number(arr[1]);
+    let c = arr[2];
+
+    index++;
+    console.log(x * y);
+    if (c === 'C') {
+        break;
+    }
 }
