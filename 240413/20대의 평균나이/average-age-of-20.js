@@ -7,7 +7,7 @@ let sum = 0;
 while (true) {
     let n = Number(input[index]);
     index++;
-    if (n < 30) {
+    if (n > 19 && n < 30) {
         sum += n;
         cnt++;
     } else {
