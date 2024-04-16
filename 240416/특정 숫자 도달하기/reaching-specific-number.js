@@ -9,4 +9,4 @@ for (let el of input) {
     sumVal += Number(el);
     cnt ++;
 }
-console.log(sumVal, sumVal / cnt);
+console.log(sumVal, (sumVal / cnt).toFixed(1));
